@@ -1,15 +1,19 @@
-=== Bulk Pricing Converter for WooCommerce ===
+=== Bulk Price Editor for WooCommerce ===
 Contributors: omardabbas
-Tags: woocommerce, bulk, price, converter, woo commerce, pricing, bulk pricing, sale,
-Requires at least: 3.8
-Tested up to: 5.3
-Stable tag: 1.6.3
+Tags: woocommerce, bulk, price, converter, woo commerce, pricing, bulk pricing, sale, editor
+Requires at least: 4.4
+Tested up to: 6.1
+Stable tag: 1.9.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-All-in-one bulk pricing converter for all your WooCommerce store products, set a fixed price, add a fixed amount or multiply prices for all your products with a couple of clicks.
+Change ALL your products prices in a single click for any WooCommerce store, set a fixed price, add a fixed amount or multiply prices for all your products with ultimate ease.
 
 == Description ==
+
+Product prices change frequently, due to a lot of factors like raw material increase, competition, season, and a lot more.
+
+In such cases, it would be a nightmare to go over ALL products one by one to update prices, and here comes this handy plugin that will help you with this.
 
 Whether you want to change all your WooCommerce store products to a fixed price, add & subtract a fixed amount, or multiply & divide prices, the **Bulk Price Converter for WooCommerce** plugin will let you modify all WooCommerce products prices with single click.
 
@@ -19,6 +23,11 @@ Products costs & profit margins have changed? That's not an issue, change pricin
 
 *Bulk Price Converter tool* is located in "WooCommerce > Bulk Price Converter". Using the tool is very easy: set **direct price**, **multiply** and/or **add** values for all product prices, press **preview prices** and then **change prices** button. That's it!
 
+If you want to try the plugin features and play around with its settings before installing it on your live website, feel free to do so on this demo store:
+URL:https://wpwhale.com/demo/wp-admin/
+User: demo
+Password: G6_32e!r@
+
 The free version of this plugin will let you do most of the tasks you want, here is a quick overview of plugin options:
 **1- Set a Direct Price:** Will let you change ALL your products prices to a fixed price, useful if you sell products that are close to each other in price, and then you want to go for a fixed price for all your store (think of Udemy when they run site-wide deals at $10 for example).
 **2- Multiply Prices:** While it's called "multiply", but you can actually divide as well, by multiplying products prices with a decimal less than 1, so if you want to reduce prices by 20%, you can use this option and multiply all prices by 0.8 to apply 20% across all your store.
@@ -27,15 +36,21 @@ The free version of this plugin will let you do most of the tasks you want, here
 
 = Premium Version =
 
-With **[Pro version](http://bit.ly/BPCWCWPF)** you can also:
+With **[Pro version](https://wpfactory.com/item/bulk-price-converter-for-woocommerce-plugin/)** you can also:
 
 * Choose products **category** and/or **tag**.
 * Set **final price correction** (rounding etc.) options.
+* Change prices based on product attributes
+
+== Screenshots ==
+
+1. Main Page with General Settings
+2. Bulk Price Converter Tool
 
 = Feedback =
 
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* [Visit plugin site](http://bit.ly/BPCWCWPF).
+* [Visit plugin site](https://wpfactory.com/item/bulk-price-converter-for-woocommerce-plugin/).
 
 == Installation ==
 
@@ -45,6 +60,57 @@ Then activate the plugin through the "Plugins" menu in WordPress.
 Finally, you can start using the plugin at "WooCommerce > Settings > Bulk Price Converter".
 
 == Changelog ==
+
+= 1.9.1 - 22/02/2023 =
+* Fixed a bug in filtering by category for free version
+* Verified compatibility with WooCommerce 7.4
+
+= 1.9 - 11/02/2023 =
+* Category price changing is now part of the FREE version
+* Verified compatibility with WooCommerce 7.3
+* New features added to Pro version: Divide & Subtract from prices, and Apply price changes by attributes
+
+= 1.8.4 - 12/06/2022 =
+* Verified compatibility with WordPress 6.1 & WooCommerce 7.0
+
+= 1.8.3 - 06/09/2022 =
+* Verified compatibility with WooCommerce 6.8
+
+= 1.8.2 - 12/06/2022 =
+* Verified compatibility with WordPress 6.0 & WooCommerce 6.5
+
+= 1.8.1 - 19/03/2022 =
+* Verified compatibility with WooCommerce 6.3
+
+= 1.8 - 28/01/2022 =
+* Verified compatibility with WordPress 5.9 & WooCommerce 6.1
+
+= 1.7.7 - 12/12/2021 =
+* Verified compatibility with WooCommerce 5.9
+
+= 1.7.6 - 30/08/2021 =
+* Checked compatibility with WooCommerce 5.6
+
+= 1.7.5 - 25/07/2021 =
+* Verified compatibility with WooCommerce 5.5 & WordPress 5.8
+
+= 1.7.4 - 17/05/2021 =
+* Verified compatibility with WooCommerce 5.3
+
+= 1.7.3 - 20/04/2021 =
+* Tested compatibilty with WC 5.2 & WP 5.7
+
+= 1.7.2 - 28/02/2021 =
+* Tested compatibilty with WC 5.0
+
+= 1.7.1 - 27/01/2021 =
+* Tested compatibilty with WC 4.9 & WP 5.6
+
+= 1.7 - 21/11/2020 =
+* Verified compatibilty with WC 4.7
+
+= 1.6.4 - 26/08/2020 =
+* Verified compatibilty with WC 4.4 & WP 5.5
 
 = 1.6.3 - 13/03/2020 =
 * Dev - Input sanitized.

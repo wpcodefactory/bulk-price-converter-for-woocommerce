@@ -12,13 +12,21 @@ if ( ! class_exists( 'Alg_WC_Bulk_Price_Converter_Core' ) ) :
 
 class Alg_WC_Bulk_Price_Converter_Core {
 
+	public $attribute_taxonomies;
 	/**
 	 * Constructor.
 	 *
 	 * @version 1.4.0
 	 */
 	function __construct() {
+		$this->attribute_taxonomies = $this->alg_wc_get_attribute_taxonomies();
 		return true;
+	}
+	
+	function alg_wc_get_attribute_taxonomies(){
+		global $wpdb;
+		$raw_attribute_taxonomies = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}woocommerce_attribute_taxonomies WHERE attribute_name != '' ORDER BY attribute_name ASC;" );
+		return $raw_attribute_taxonomies;
 	}
 
 	/**
@@ -39,9 +47,17 @@ class Alg_WC_Bulk_Price_Converter_Core {
 			if ( '' !== $this->atts['multiply_prices_by'] ) {
 				$modified_price = $modified_price * $this->atts['multiply_prices_by'];
 			}
+			// Divide
+			if ( '' !== $this->atts['divide_prices_by'] ) {
+				$modified_price = $modified_price / $this->atts['divide_prices_by'];
+			}
 			// Addition
 			if ( '' != $this->atts['add_to_price'] ) {
 				$modified_price = $modified_price + $this->atts['add_to_price'];
+			}
+			// Subtract
+			if ( '' != $this->atts['minus_to_price'] ) {
+				$modified_price = $modified_price - $this->atts['minus_to_price'];
 			}
 			// Rounding
 			if ( 'none' != $this->atts['round_function'] ) {
@@ -124,10 +140,25 @@ class Alg_WC_Bulk_Price_Converter_Core {
 				'fields'         => 'ids',
 			);
 			if ( 'any' != $atts['product_cats'] ) {
-				$args = apply_filters( 'alg_wc_bpc_product_query', $args, 'product_cat', $atts['product_cats'] );
+				// $args = apply_filters( 'alg_wc_bpc_product_query', $args, 'product_cat', $atts['product_cats'] );
+				$terms = $atts['product_cats'];
+				$args['tax_query'][] = array(
+					'taxonomy' => 'product_cat',
+					'field'    => 'slug',
+					'terms'    => array( $terms ),
+					'operator' => ( 'none' != $terms ? 'IN' : 'NOT EXISTS' ),
+				);
 			}
 			if ( 'any' != $atts['product_tags'] ) {
 				$args = apply_filters( 'alg_wc_bpc_product_query', $args, 'product_tag', $atts['product_tags'] );
+			}
+			if(isset($this->attribute_taxonomies) && !empty($this->attribute_taxonomies)){
+				foreach($this->attribute_taxonomies as $taxn){
+					$attr_slug = 'pa_'.$taxn->attribute_name;
+					if ( 'any' != $atts[$attr_slug] ) {
+						$args = apply_filters( 'alg_wc_bpc_product_query', $args, $attr_slug, $atts[$attr_slug] );
+					}
+				}
 			}
 			$loop = new WP_Query( $args );
 			if ( ! $loop->have_posts() ) {
