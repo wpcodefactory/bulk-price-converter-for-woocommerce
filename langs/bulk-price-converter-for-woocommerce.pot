@@ -1,0 +1,241 @@
+#: bulk-price-converter-for-woocommerce.php:148
+msgid "Settings"
+msgstr ""
+
+#: bulk-price-converter-for-woocommerce.php:151
+msgid "Unlock all"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:40
+msgid "Wrong user role or nonce did not verify."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:60
+msgid "Prices updated successfully!"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:63
+#: includes/class-alg-wc-bulk-price-converter-tool.php:225
+msgid "No products."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:77
+#: includes/class-alg-wc-bulk-price-converter-tool.php:108
+msgid "Bulk Price Converter Tool"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:78
+#: includes/settings/class-wc-settings-bulk-price-converter.php:24
+msgid "Bulk Price Converter"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:107
+msgid "Bulk Price Converter plugin settings"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:111
+msgid "General Options"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:114
+msgid "<strong>Direct</strong> price"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:115
+msgid "Fill this if you want to set all products prices to same value."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:116
+msgid "Ignored if empty."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:121
+msgid "<strong>Multiply</strong> all product prices by"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:126
+msgid "<strong>Add</strong> to all product prices"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:131
+msgid "Price <strong>type</strong> to modify"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:134
+msgid "Both"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:136
+msgid "Sale prices only"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:138
+msgid "Regular prices only"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:144
+msgid "Products"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:145
+#: includes/class-alg-wc-bulk-price-converter-tool.php:164
+#, php-format
+msgid "You will need %s plugin to change values in this section."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:149
+msgid "Products <strong>category</strong>"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:155
+msgid "Products <strong>tag</strong>"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:163
+msgid "Final Price Correction"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:168
+msgid "<strong>Rounding function</strong>"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:171
+#: includes/class-alg-wc-bulk-price-converter-tool.php:272
+msgid "None"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:173
+msgid "Round"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:175
+msgid "Floor"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:177
+msgid "Ceil"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:181
+msgid "Rounding <strong>coefficient</strong>"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:182
+msgid "Ignored if \"Rounding function\" is set to \"None\"."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:187
+msgid "<strong>\"Pretty prices\"</strong> threshold"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:188
+msgid "Ignored if set to zero."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:198
+msgid "Preview prices"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:201
+msgid "Change prices"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:202
+msgid "There is no undo for this action."
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:203
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:204
+#: includes/settings/class-wc-settings-bulk-price-converter.php:62
+msgid "Reset"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:210
+msgid "Results"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:214
+msgid "Product"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:215
+msgid "Categories"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:216
+msgid "Tags"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:217
+msgid "Price Type"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:218
+msgid "Original Price"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:219
+msgid "Modified Price"
+msgstr ""
+
+#: includes/class-alg-wc-bulk-price-converter-tool.php:263
+msgid "Any"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:24
+msgid "General"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:37
+msgid "Bulk Price Converter Options"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:42
+msgid "Tool"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:47
+msgid "Bulk price converter tool"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:50
+msgid "Number of decimals"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:51
+msgid "Number of decimals (i.e. step) in tool's \"number\" type fields."
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:58
+msgid "Block size"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:59
+msgid "Number of products processed in a single products query."
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:66
+msgid "Time limit"
+msgstr ""
+
+#: includes/settings/class-alg-wc-bulk-price-converter-settings-general.php:67
+msgid ""
+"The maximum execution time for a a single products query, in seconds. If set "
+"to zero, no time limit is imposed. If set to -1, default server time limit "
+"is used."
+msgstr ""
+
+#: includes/settings/class-wc-settings-bulk-price-converter.php:56
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/settings/class-wc-settings-bulk-price-converter.php:61
+msgid "Reset section settings"
+msgstr ""
+
+#: includes/settings/class-wc-settings-bulk-price-converter.php:101
+msgid "Your settings have been reset."
+msgstr ""
