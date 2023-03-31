@@ -61,6 +61,9 @@ Finally, you can start using the plugin at "WooCommerce > Settings > Bulk Price 
 
 == Changelog ==
 
+= 1.9.2 - 31/03/2023 =
+* Move to WPFactory.
+
 = 1.9.1 - 22/02/2023 =
 * Fixed a bug in filtering by category for free version
 * Verified compatibility with WooCommerce 7.4

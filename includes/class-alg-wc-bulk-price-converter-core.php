@@ -3,7 +3,7 @@
  * Bulk Price Converter - Core Class
  *
  * @version 1.5.0
- * @author  WPWhale
+ * @author  WPFactory
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
