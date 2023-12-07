@@ -2,8 +2,8 @@
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
 Tags: woocommerce, bulk, price, converter, woo commerce, pricing, bulk pricing, sale, editor
 Requires at least: 4.4
-Tested up to: 6.3
-Stable tag: 1.9.5
+Tested up to: 6.4
+Stable tag: 1.9.6
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -11,36 +11,108 @@ Change ALL your products prices in a single click for any WooCommerce store, set
 
 == Description ==
 
-Product prices change frequently, due to a lot of factors like raw material increase, competition, season, and a lot more.
+> “Definitely the best plagin for the need: simple
+Easy to settle
+And more important if you dont need round prices, its free” – ⭐⭐⭐⭐⭐  [pey0ne](https://wordpress.org/support/topic/definitely-the-best-plagin-for-the-need/)
 
-In such cases, it would be a nightmare to go over ALL products one by one to update prices, and here comes this handy plugin that will help you with this.
+Editing the price of one item? That’s a simple task. 
+Editing the price of thousands of items? You either will spend days doing it manually and you’ll never finish, hire someone to do it and he probably will make mistakes, or install our Bulk Price Editor for WooCommerce Plugin.
 
-Whether you want to change all your WooCommerce store products to a fixed price, add & subtract a fixed amount, or multiply & divide prices, the **Bulk Price Converter for WooCommerce** plugin will let you modify all WooCommerce products prices with single click.
+With a simple click of a button you can change the price of any number of items you want, without any mistakes, and saving hours of labor for more impactful tasks in your store.
 
-If you're running sale across all your store and want to apply discount (percentage or fixed number), the plugin will let you apply this in no time.
+The efficiency and convinence of using our plugin will make you wish you had knew it before, but fret not, the features in our plugin will compensate for all the wasted hours you’ve spent manually editing the price of each item in your store.
 
-Products costs & profit margins have changed? That's not an issue, change pricing by adding a fixed amount to all your store products in one click to update ALL your products prices.
+#### Useful Links ####
+* **[Plugin Main Page](https://wpfactory.com/item/bulk-price-editor-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "Plugin Main Page")**
+* **[Plugin Support Forum](https://wpfactory.com/support/item/bulk-price-editor-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "Plugin Support Forum")**
+* **[Documentation & How to](https://wpfactory.com/docs/bulk-price-editor-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "Documentation & How to")**
 
-*Bulk Price Converter tool* is located in "WooCommerce > Bulk Price Converter". Using the tool is very easy: set **direct price**, **multiply** and/or **add** values for all product prices, press **preview prices** and then **change prices** button. That's it!
+## 🤝 Recommended By##
+* [Common Ninja: Price Update: Bulk Pricing Editor for WooCommerce](https://www.commoninja.com/discover/wordpress/plugin/bulk-price-converter-for-woocommerce "Common Ninja: Price Update: Bulk Pricing Editor for WooCommerce")
+* [Quad Layers: Best 5 Plugins to Change Prices in Bulk in WooCommerce](https://quadlayers.com/plugins-to-change-prices-in-bulk/ "Quad Layers: Best 5 Plugins to Change Prices in Bulk in WooCommerce")
+* [Bulk Price Converter for WooCommerce Review](https://chooseplugin.com/plugin-info/bulk-price-converter-for-woocommerce "Bulk Price Converter for WooCommerce")
 
-If you want to try the plugin features and play around with its settings before installing it on your live website, feel free to do so on this demo store:
-URL:https://wpwhale.com/demo/wp-admin/
-User: demo
-Password: G6_32e!r@
 
-The free version of this plugin will let you do most of the tasks you want, here is a quick overview of plugin options:
-**1- Set a Direct Price:** Will let you change ALL your products prices to a fixed price, useful if you sell products that are close to each other in price, and then you want to go for a fixed price for all your store (think of Udemy when they run site-wide deals at $10 for example).
-**2- Multiply Prices:** While it's called "multiply", but you can actually divide as well, by multiplying products prices with a decimal less than 1, so if you want to reduce prices by 20%, you can use this option and multiply all prices by 0.8 to apply 20% across all your store.
-**3- Add Prices:** Similar to multiply, you can add or subtract (by adding a negative number) to all your product prices at once. This is very handy when your costs increase/decrease and can affect margins, you can use this feature to change all your store prices with a single click.
-**4- Sale/Regular Price Change:** This option will allow you to select whether you want to apply options 1,2 or 3 to the sale price, regular price, or both prices on your store.
+## 🚀 Main Features: FREE Version##
 
-= Premium Version =
+Bulk Price Editor is a really simple feature to use yet it's extremely powerful. Basically what this function helps you to do is to change the prices of "all" of your products or "some" of your products based on the criteria that you specify and with the amount that you specify. Here are the main features:
 
-With **[Pro version](https://wpfactory.com/item/bulk-price-converter-for-woocommerce-plugin/)** you can also:
+### 🚀 **Change all prices to a fixed amount in bulk** ###
+Set all product prices into a specific price that you determine. This is extremely helpful when you're selling closely priced products and want to apply a sitewide offer, so you can sell all products on your site for $10 for example (similar to Udemy offers).
+### 🚀 **Bulk edit prices by multiplying prices with any value** ### 
+Eventhough the feature name is 'multiply' you can use it to reduce product prices by multiplying by fractions, so if you want to run a sitewide discount by %30 for example you can multiply by 0.7 so the prices change to 70% of what it has originally been that way a %30 perecent discount has been applied.
+### 🚀 **Increase product prices by a fixed amount** ###
+If your profit margins drop due to changes in wholesale prices, or anywhere in the supply chain, you can compensate these changes by adding a fixed amount to your prices so your profit margins is not negatively impacted.
+### 🚀 **Bulk edit sale or regular prices (or both)** ###
+Choose to which type of prices would like to apply these changes: regular price, sales price, or both.
+### 🚀 **Select to bulk edit prices by category** ###
+Choose to which category of items do you want to apply these changes, to your whole store or to a specific product category that you specifically want to apply these changes.
 
-* Choose products **category** and/or **tag**.
-* Set **final price correction** (rounding etc.) options.
-* Change prices based on product attributes
+### Reviews ###
+
+> “Very helpful plug: shop for leading this plug-in is a simple combine – very very helpful.” – ⭐⭐⭐⭐⭐ [mtd13](https://wordpress.org/support/topic/very-helpful-plug/)
+> “perfect: excellent plugin worked for me a lot. I got all the prices done with one click.” – ⭐⭐⭐⭐⭐ [uguryagiz51](https://wordpress.org/support/topic/perfect-9955/)
+
+## 🏆 Pro Version ##
+
+Our Pro features further expands the capabilites of our plugin so you can have full control on the prices of the items you sell in your store, in addition to the main features here are the pro ones:
+
+### 🏆 **Change Prices by Dividing by fixed amount** ###
+In case you want to decrease all of your product prices by a fixed amount, for a sitewide sale or a discount for example, you can divide all product prices by the amount you specifiy.
+### 🏆 **Subtract fixed amount from all products prices** ###
+If you want to apply a coupon for example you will want to subtract the coupon amount from the price of the items, that's when will the subtract all prices by feature might come in handy.
+### 🏆 **Bulk edit products prices by tags** ###
+Specify which tags do you want your changes to be applied to, if you want to apply to all tags you can leave it at 'Any'.
+### 🏆 **Filteration based on attributes** ###
+based on the attributes of your website you can control which labels and products will the prices be applied to allowing for full customization and maximum control over your site's pricing strategy. 
+### 🏆 **Rounding function** ###
+Choose how do you want to round your prices to the upper limit (Ceil), to the lower limit (Floor) or you don't want any rounding.
+### 🏆 **Rounding cooeffecient** ###
+Choose the decimal accuracy of the rounding, do you want to round to one digit after the dicimal point or two digits or more than that, it's all in your control.
+### 🏆 **Apply Charm Pricing** ###
+You can even implment charm pricing on your store using our plugin, by utilizing the psychological that govern the human nature you can increase the sales and revenue of your ecommerce store.
+
+## 💯 Why WPFactory?##
+
+* **Experience You Can Trust:** Over a decade in the business
+* **Wide Plugin Selection:** Offering 65+ unique and powerful plugins
+* **Highly-Rated Support:** Backed by hundreds of 5-star reviews
+* **Expert Team:** Dedicated developers and technical support at your service
+
+___
+
+## What's Next? Check More Plugins by WPFactory##
+
+If you're enjoying our plugin, we'd love for you to explore our other offerings. WPFactory has a diverse range of plugins tailored to enhance your experience. 
+
+Dive in and discover more tools to empower your WooCommerce Store!
+
+
+* [**Min Max Step Quantity**](https://wpfactory.com/item/product-quantity-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Min Max Step Quantity**"): Define a min max, step and default quantity for products, show a dropdown, quantities on archive/categories pages, use decimal quantities, and much more on WooCommerce stores (**[Try our Free version](https://wordpress.org/plugins/product-quantity-for-woocommerce/ "Try our Free version")**)
+
+* [**Cost of Goods for WooCommerce**](https://wpfactory.com/item/cost-of-goods-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Cost of Goods WooCommerce**"): Make informed decisions to maximize profits, correctly calculate Cost of Goods Sold (COGS) for your WooCommerce store and enhance your financial management capabilities (**[Try our Free version](https://wordpress.org/plugins/cost-of-goods-for-woocommerce/ "Try our Free version")**)
+
+* [**Maximum Products per User**](https://wpfactory.com/item/maximum-products-per-user-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Maximum Products per User**"): Set personalized purchase limits for your customers, define maximum product quantities, catered to specific user roles & selected date range (**[Try our Free version](https://wordpress.org/plugins/maximum-products-per-user-for-woocommerce/ "Try our Free version")**)
+
+* [**Order Minimum/Maximum Amount**](https://wpfactory.com/item/order-minimum-maximum-amount-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Order Minimum/Maximum Amount**"): Set tailored minimum and maximum order thresholds, by sum, quantity, weight, or volume, customize limits by user role, specific user, product category, shipping method, payment gateway, or even by currency (**[Try our Free version](https://wordpress.org/plugins/order-minimum-amount-for-woocommerce/ "Try our Free version")**)
+
+* [**EU/UK VAT Manager for WooCommerce**](https://wpfactory.com/item/eu-vat-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**EU/UK VAT Manager for WooCommerce**"): Streamline your WooCommerce store’s EU/UK VAT compliance effortlessly, automate VAT settings, validation (VIES), and how to apply taxes, ensuring a seamless and compliant customer experience (**[Try our Free version](https://wordpress.org/plugins/eu-vat-for-woocommerce/ "Try our Free version")**)
+
+* [**Email Verification for WooCommerce**](https://wpfactory.com/item/email-verification-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Email Verification for WooCommerce**"): Enhance WooCommerce security and credibility with Email Verification best plugin. Ensure genuine customer interactions, eliminate spam, and elevate email marketing efficiency (**[Try our Free version](https://wordpress.org/plugins/maximum-products-per-user-for-woocommerce/ "Try our Free version")**)
+
+* [**Free Shipping Over Amount for WooCommerce**](https://wpfactory.com/item/amount-left-free-shipping-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Free Shipping Over Amount for WooCommerce**"): WooCommerce Advanced Free Shipping plugin, use our plugin to quality customers for free shipping when they spend specific amount, by showing a bar on remaining amounts they need to spend to qualify for free shipping (**[Try our Free version](https://wordpress.org/plugins/amount-left-free-shipping-woocommerce/ "Try our Free version")**)
+
+* [**Dynamic Pricing & Bulk Quantity Discounts**](https://wpfactory.com/item/product-price-by-quantity-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme "**Dynamic Pricing & Bulk Quantity Discounts**"): Create and manage advanced dynamic pricing and bulk discount rules for WooCommerce, encouraging bulk purchases and driving your sales to new heights (**[Try our Free version](https://wordpress.org/plugins/wholesale-pricing-woocommerce/ "Try our Free version")**)
+
+
+> “harika süper mükemmel 3-5 saniyede tüm fiyatları değiştirdim. teşekkürler” – ⭐⭐⭐⭐⭐ [uguryagiz51](https://wpfactory.com/item/bulk-price-editor-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme)
+
+> “A very good plugin that you will use for woo commerce. It helps you to change the price for all products once.
+Also the support are a very professional persons. Like it!” – ⭐⭐⭐⭐⭐ [Charbel](https://wpfactory.com/item/bulk-price-editor-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme)
+
+> “Great support with a detailed customization request. Thank you for the great service!” – ⭐⭐⭐⭐⭐ [CWW](https://wpfactory.com/item/bulk-price-editor-for-woocommerce/?utm_source=wporg&utm_medium=organic&utm_campaign=readme)
+
+> “Very simple, effective plugin!: This plugin is so easy to use. It does exactly what it claims to do. A must-have if using WooCommerce.” – ⭐⭐⭐⭐⭐ [cjackson111](https://wordpress.org/support/topic/very-simple-effective-plugin/)"
 
 == Screenshots ==
 
@@ -60,6 +132,11 @@ Then activate the plugin through the "Plugins" menu in WordPress.
 Finally, you can start using the plugin at "WooCommerce > Settings > Bulk Price Converter".
 
 == Changelog ==
+
+= 1.9.6 - 07/12/2023 =
+* WC tested up to: 8.3.
+* Tested up to: 6.4.
+* Update readme.txt
 
 = 1.9.5 - 24/09/2023 =
 * WC tested up to: 8.1.
