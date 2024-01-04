@@ -3,7 +3,7 @@ Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmu
 Tags: woocommerce, bulk, price, converter, woo commerce, pricing, bulk pricing, sale, editor
 Requires at least: 4.4
 Tested up to: 6.4
-Stable tag: 1.9.6
+Stable tag: 1.9.7
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -132,6 +132,10 @@ Then activate the plugin through the "Plugins" menu in WordPress.
 Finally, you can start using the plugin at "WooCommerce > Settings > Bulk Price Converter".
 
 == Changelog ==
+
+= 1.9.7 - 04/01/2024 =
+* WC tested up to: 8.4.
+* HPOS compatibility.
 
 = 1.9.6 - 07/12/2023 =
 * WC tested up to: 8.3.

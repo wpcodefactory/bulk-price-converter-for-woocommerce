@@ -3,13 +3,13 @@
 Plugin Name: Price Update: Bulk Pricing Editor for WooCommerce
 Plugin URI: https://wpfactory.com/item/bulk-price-converter-for-woocommerce-plugin/
 Description: Save your time with all-in-one bulk price converter for all your WooCommerce store prodducts, change your prices, add a fixed amount or multiply prices for all your products with a couple of clicks.
-Version: 1.9.6
+Version: 1.9.7
 Author: WPFactory
 Author URI: https://wpfactory.com
 Text Domain: bulk-price-converter-for-woocommerce
 Domain Path: /langs
 Copyright: © 2023 WPFactory
-WC tested up to: 8.3
+WC tested up to: 8.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -23,7 +23,7 @@ if ( ! class_exists( 'Alg_WC_Bulk_Price_Converter' ) ) :
  * Main Alg_WC_Bulk_Price_Converter Class
  *
  * @class   Alg_WC_Bulk_Price_Converter
- * @version 1.5.1
+ * @version 1.9.7
  * @since   1.0.0
  */
 final class Alg_WC_Bulk_Price_Converter {
@@ -34,7 +34,7 @@ final class Alg_WC_Bulk_Price_Converter {
 	 * @var   string
 	 * @since 1.2.0
 	 */
-	public $version = '1.9.6';
+	public $version = '1.9.7';
 
 	/**
 	 * @var Alg_WC_Bulk_Price_Converter The single instance of the class
@@ -209,3 +209,10 @@ if ( ! function_exists( 'alg_wc_bulk_price_converter' ) ) {
 }
 
 alg_wc_bulk_price_converter();
+
+add_action( 'before_woocommerce_init', function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', dirname(__FILE__), true );
+	}
+} );
+
