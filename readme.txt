@@ -133,7 +133,7 @@ Finally, you can start using the plugin at "WPFactory > Bulk Price Converter".
 
 == Changelog ==
 
-= 2.0.3 - 22/04/2025 =
+= 2.0.3 - 22/04/2026 =
 * Feature - Tool - General Options - "Percentage all product prices by" option added.
 * Dev - WPFactory Cross-Selling - Library updated (to v1.1.0).
 * Dev - WPFactory Admin Menu - Library updated (to v1.1.0).
