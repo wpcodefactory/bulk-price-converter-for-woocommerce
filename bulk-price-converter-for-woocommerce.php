@@ -3,7 +3,7 @@
 Plugin Name: Price Update: Bulk Pricing Editor for WooCommerce
 Plugin URI: https://wpfactory.com/item/bulk-price-converter-for-woocommerce-plugin/
 Description: Save your time with all-in-one bulk price converter for all your WooCommerce store products, change your prices, add a fixed amount or multiply prices for all your products with a couple of clicks.
-Version: 2.0.3
+Version: 2.0.4
 Author: WPFactory
 Author URI: https://wpfactory.com
 Requires at least: 4.4
@@ -33,7 +33,7 @@ final class Alg_WC_Bulk_Price_Converter {
 	 * @var   string
 	 * @since 1.2.0
 	 */
-	public $version = '2.0.3';
+	public $version = '2.0.4';
 
 	/**
 	 * @var Alg_WC_Bulk_Price_Converter The single instance of the class
