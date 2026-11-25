@@ -236,6 +236,13 @@ class Alg_WC_Bulk_Price_Converter_Core {
 
 			// Save the current prices of the whole block before any of them changes, so the change can be undone
 			if ( $undo ) {
+				$block_item_ids = array();
+				foreach ( $block as $block_item ) {
+					foreach ( $block_item[2] as $_product_id ) {
+						$block_item_ids[] = (int) $_product_id;
+					}
+				}
+				update_meta_cache( 'post', $block_item_ids );
 				foreach ( $block as $block_item ) {
 					$undo->add( $block_item[0], $block_item[2], $block_item[1] );
 				}

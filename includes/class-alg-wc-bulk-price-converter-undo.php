@@ -206,49 +206,66 @@ class Alg_WC_Bulk_Price_Converter_Undo {
 			return false;
 		}
 
-		$time_limit = get_option( 'alg_wc_bulk_price_converter_time_limit', -1 );
-		$parent_ids = array();
-		$variations = 0;
+		$time_limit   = get_option( 'alg_wc_bulk_price_converter_time_limit', -1 );
+		$all_stati    = array_keys( get_post_stati() );
+		$variable_ids = array();
+		$products     = 0;
+		$variations   = 0;
 
 		for ( $i = 0; $i < (int) $info['chunks']; $i++ ) {
 			if ( -1 != $time_limit && function_exists( 'wc_set_time_limit' ) ) {
 				wc_set_time_limit( $time_limit );
 			}
 			$chunk = get_option( self::CHUNK_OPTION . $i, array() );
-			if ( ! is_array( $chunk ) ) {
+			if ( ! is_array( $chunk ) || empty( $chunk ) ) {
 				continue;
 			}
+
+			// One query per type for the whole chunk: products and variations that still exist, and the variations' parents
+			$chunk_ids     = array_map( 'intval', array_keys( $chunk ) );
+			$query_args    = array(
+				'post__in'               => $chunk_ids,
+				'post_status'            => $all_stati,
+				'posts_per_page'         => -1,
+				'orderby'                => 'none',
+				'no_found_rows'          => true,
+				'update_post_term_cache' => false,
+			);
+			$product_ids   = array_flip( get_posts( array_merge( $query_args, array( 'post_type' => 'product', 'fields' => 'ids' ) ) ) );
+			$variation_ids = get_posts( array_merge( $query_args, array( 'post_type' => 'product_variation', 'fields' => 'id=>parent' ) ) );
+			update_meta_cache( 'post', $chunk_ids );
+
 			foreach ( $chunk as $item_id => $prices ) {
-				$post_type = get_post_type( $item_id );
-				if ( ! in_array( $post_type, array( 'product', 'product_variation' ), true ) ) {
+				$item_id = (int) $item_id;
+				if ( isset( $variation_ids[ $item_id ] ) ) {
+					$variable_ids[ (int) $variation_ids[ $item_id ] ] = true;
+					$variations++;
+				} elseif ( isset( $product_ids[ $item_id ] ) ) {
+					$products++;
+				} else {
 					continue; // Deleted since the change.
 				}
 				foreach ( $this->meta_keys as $index => $meta_key ) {
 					if ( ! array_key_exists( $index, $prices ) || null === $prices[ $index ] ) {
-						delete_post_meta( $item_id, $meta_key );
+						if ( metadata_exists( 'post', $item_id, $meta_key ) ) {
+							delete_post_meta( $item_id, $meta_key );
+						}
 					} else {
 						update_post_meta( $item_id, $meta_key, wp_slash( $prices[ $index ] ) );
 					}
 				}
-				if ( 'product_variation' === $post_type ) {
-					$parent_ids[ (int) wp_get_post_parent_id( $item_id ) ] = true;
-					$variations++;
-				} else {
-					$parent_ids[ (int) $item_id ] = true;
-				}
 			}
 		}
 
+		// Variable products: re-sync the price range, clear their cached prices
 		$core = alg_wc_bulk_price_converter()->core;
-		foreach ( array_keys( $parent_ids ) as $parent_id ) {
-			$product = wc_get_product( $parent_id );
-			if ( $product && $product->is_type( 'variable' ) ) {
-				$core->sync_variable_product( $product );
-			}
+		foreach ( array_keys( $variable_ids ) as $variable_id ) {
+			$core->sync_variable_product( wc_get_product( $variable_id ) );
 			if ( function_exists( 'wc_delete_product_transients' ) ) {
-				wc_delete_product_transients( $parent_id );
+				wc_delete_product_transients( $variable_id );
 			}
 		}
+		// Shop-wide price caches
 		if ( function_exists( 'wc_delete_product_transients' ) ) {
 			wc_delete_product_transients();
 		}
@@ -256,7 +273,7 @@ class Alg_WC_Bulk_Price_Converter_Undo {
 		$this->clear();
 
 		return array(
-			'products'   => count( $parent_ids ),
+			'products'   => $products + count( $variable_ids ),
 			'variations' => $variations,
 		);
 	}
