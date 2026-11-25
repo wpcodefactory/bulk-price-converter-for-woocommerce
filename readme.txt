@@ -1,6 +1,6 @@
 === Price Update: Bulk Pricing Editor for WooCommerce ===
 Contributors: wpcodefactory, anbinder, karzin, omardabbas, kousikmukherjeeli
-Tags: woocommerce, bulk, price, converter, bulk pricing
+Tags: woocommerce, bulk, price, bulk edit, bulk pricing
 Requires at least: 4.4
 Tested up to: 7.1
 Stable tag: 2.0.6
